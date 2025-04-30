@@ -1,6 +1,7 @@
-import './assets/main.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import vSelect from "vue-select";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import "./assets/scss/main.scss";
 
-createApp(App).mount('#app')
+createApp(App).component("v-select", vSelect).mount("#app");
